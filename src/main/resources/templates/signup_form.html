@@ -1,5 +1,4 @@
-<html layout:decorate="~{layout}" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
-<meta charset="UTF-8">
+<html layout:decorate="~{layout}" xmlns:layout="http://www.w3.org/1999/xhtml">
 <div layout:fragment="content" class="container my-3">
     <div class="my-3 border-bottom">
         <div>
@@ -9,7 +8,7 @@
     <form th:action="@{/user/signup}" th:object="${userCreateForm}" method="post">
         <div th:replace="~{form_errors :: formErrorsFragment}"></div>
         <div class="mb-3">
-            <label for="username" class="form-label">사용자이름</label>
+            <label for="username" class="form-label">사용자ID</label>
             <input type="text" th:field="*{username}" class="form-control">
         </div>
         <div class="mb-3">
