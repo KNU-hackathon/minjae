@@ -44,4 +44,8 @@ public class UserController {
     public String login() {
         return "login_form";
     }
+    @GetMapping("/dddd")
+    public String dddd(){
+        return "signup_form";
+    }
 }
